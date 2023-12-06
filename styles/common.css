@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+
+header,
+footer {
+  color: #faebd7;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #001f3f, #000000);
+}
+
+header img {
+  width: 140px;
+  height: 70px;
+  padding: 10px;
+  margin-left: 50px;
+}
+
+#user-profile ul {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  cursor: pointer;
+}
+
+header nav ul {
+  display: flex;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li:hover {
+  text-decoration: underline;
+}
+
+header ul li {
+  margin-right: 20px;
+  padding: 10px;
+}
+
+header nav ul li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+header ul li i {
+  margin-right: 10px;
+}
+
+#user-profile {
+  margin-right: 30px;
+}
+
+#user-profile ul li {
+  margin-right: 0;
+}
+
+#user-profile ul li i {
+  margin: 0;
+}
+
+main {
+  height: 60vh;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #000000;
+  padding-bottom: 30px;
+}
+
+a {
+  color: #faebd7;
+  text-decoration: none;
+}
+
+#footer-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+#footer-copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.fa-brands {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-youtube {
+  color: #cd201f;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-instagram {
+  color: #ef426f;
+}
+
+.line {
+  margin: 20px auto;
+  width: 40%;
+  height: 0.5px;
+  background-color: #faebd7;
+}
+
+#footer-text {
+  background-color: #eaeaea;
+  color: #707070;
+  font-size: 12px;
+  padding: 20px;
+  word-spacing: 3px;
+}
+
+#mobile-menu {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  header nav {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 759px) {
+  header img {
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    margin-left: 20px;
+  }
+
+  #footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #footer-content div {
+    width: 50%;
+  }
+
+  footer {
+    height: unset;
+  }
+
+  header nav,
+  #user-profile {
+    display: none;
+  }
+
+  #mobile-menu {
+    display: block;
+    margin-right: 30px;
+    font-size: 20px;
+  }
+
+  .line {
+    display: none;
+  }
+}
