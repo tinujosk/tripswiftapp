@@ -18,8 +18,8 @@ header {
 }
 
 header img {
-  width: 140px;
-  height: 70px;
+  width: 130px;
+  height: 65px;
   padding: 10px;
   margin-left: 50px;
 }
@@ -151,8 +151,8 @@ a {
 
 @media (max-width: 759px) {
   header img {
-    width: 100px;
-    height: 50px;
+    width: 90px;
+    height: 45px;
     padding: 10px;
     margin-left: 20px;
   }
