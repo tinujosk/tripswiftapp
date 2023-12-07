@@ -1,6 +1,6 @@
 # tripswiftapp
 
-## Responsive design final project.
+## Responsive design final project
 
 The name of the project is TripSwift which is a travel agency website which helps with
 planning and booking of leisure trips around the world.
