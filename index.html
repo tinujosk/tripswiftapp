@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TripSwift - Your Tour Partner</title>
     <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/login.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,122 +21,38 @@
       referrerpolicy="no-referrer"
     />
   </head>
-
   <body>
     <header>
-      <a href="./home.html"
-        ><img src="./images/logo.png" alt="The company logo"
-      /></a>
-      <nav>
-        <ul>
-          <li>
-            <i class="fa-solid fa-suitcase"></i><a href="./home.html">Home</a>
-          </li>
-          <li>
-            <i class="fa-solid fa-earth-americas"></i>
-            <a href="./attractions.html">Attractions</a>
-          </li>
-          <li>
-            <i class="fa-solid fa-plane"></i
-            ><a href="./bookings.html">Flights and Hotels</a>
-          </li>
-          <li>
-            <i class="fa-solid fa-address-book"></i
-            ><a href="./contact.html">Contact Us</a>
-          </li>
-        </ul>
-      </nav>
       <div id="user-profile">
         <ul>
-          <li><i class="fa-solid fa-envelope"></i></li>
-          <li><i class="fa-solid fa-language"></i></li>
-          <li><i class="fa-solid fa-user"></i></li>
+          <li><i class="fa-solid fa-language"></i> Language Settings</li>
         </ul>
       </div>
-      <div id="mobile-menu">
-        <i class="fa-solid fa-bars"></i>
-      </div>
     </header>
-
-    <main></main>
-    <footer>
-      <div id="footer-text">
-        The cornerstone of TripSwift’s success is our commitment to precision
-        and personalization. Our platform harnesses the latest advancements in
-        AI and machine learning to understand and anticipate traveler
-        preferences, ensuring each itinerary is a masterpiece tailored to
-        perfection. We blend this technological finesse with a team of
-        passionate travel connoisseurs, each armed with a wealth of expertise
-        and a fervor for exploration. TripSwift isn’t just a travel agency; it's
-        a catalyst for unforgettable memories. We prioritize sustainability,
-        partnering with eco-conscious accommodations and promoting responsible
-        travel practices. Our vision extends beyond booking flights and
-        accommodations; it's about crafting transformative experiences that
-        leave an indelible mark on each adventurer’s soul. In a world inundated
-        with options, TripSwift stands tall as the epitome of personalized,
-        immersive travel, promising not just vacations, but unforgettable
-        odysseys.
-      </div>
-      <div id="footer-content">
-        <div>
-          <h4>Quick links</h4>
-
-          <ul>
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="./attractions.html">Attractions</a></li>
-            <li><a href="./bookings.html">Flights and Hotels</a></li>
-            <li><a href="./contact.html">Contact Us</a></li>
-          </ul>
+    <main>
+      <div id="login-container">
+        <div id="logo">
+          <img src="./images/logo.png" alt="The company logo" />
+          <p id="logo-caption">Where Dreams Take Flight</p>
         </div>
-        <div>
-          <h4>Reach the developers</h4>
-
-          <ul>
-            <li><a href="">Kiran</a></li>
-            <li><a href="">Alister</a></li>
-            <li><a href="">Viswanathan</a></li>
-            <li><a href="">Tinu</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Other links</h4>
-
-          <ul>
-            <li><a href="">Travel Policies</a></li>
-            <li><a href="">Testimonials or Reviews</a></li>
-            <li><a href="">Partnerships</a></li>
-            <li><a href="">Newsletter</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Get connected with us!</h4>
-
-          <ul>
-            <li>
-              <i class="fa-brands fa-facebook"></i
-              ><a href="https://www.facebook.com/" target="_blank">Facebook</a>
-            </li>
-            <li>
-              <i class="fa-brands fa-youtube"></i
-              ><a href="https://www.youtube.com/" target="_blank">YouTube</a>
-            </li>
-            <li>
-              <i class="fa-brands fa-twitter"></i
-              ><a href="https://www.twitter.com/" target="_blank">Twitter</a>
-            </li>
-            <li>
-              <i class="fa-brands fa-instagram"></i
-              ><a href="https://www.instagram.com/" target="_blank"
-                >Instagram</a
-              >
-            </li>
-          </ul>
+        <form action="">
+          <input type="text" placeholder="Username" required />
+          <input type="password" placeholder="Password" required />
+          <a href="./home.html"> <input type="button" value="Login" /></a>
+        </form>
+        <p id="forgot-password">Forgot Password? <u>Reset it here</u></p>
+        <p>Or Login with Social Network</p>
+        <div class="social-login-card">
+          <div class="google">
+            <i class="fa-brands fa-google"></i>
+            <button>Google</button>
+          </div>
+          <div class="facebook">
+            <i class="fa-brands fa-facebook"></i>
+            <button>Facebook</button>
+          </div>
         </div>
       </div>
-      <div class="line"></div>
-      <div id="footer-copyright">
-        &copy; 2023 Copyright TripSwift App. All rights reserved.
-      </div>
-    </footer>
+    </main>
   </body>
 </html>
