@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TripSwift - Your Tour Partner</title>
     <link rel="stylesheet" href="./styles/common.css" />
-    <link rel="stylesheet" href="./styles/bookings.css">
+    <link rel="stylesheet" href="./styles/bookings.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,7 +20,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
   </head>
 
   <body>
@@ -51,11 +50,7 @@
         <ul>
           <li><i class="fa-solid fa-envelope"></i></li>
           <li><i class="fa-solid fa-language"></i></li>
-          <li>
-            <a href="./index.html">
-              <i title="Click to Logout" class="fa-solid fa-user"></i
-            ></a>
-          </li>
+          <li><i class="fa-solid fa-user"></i></li>
         </ul>
       </div>
       <div id="mobile-menu">
@@ -74,66 +69,128 @@
         </div>
       </div>
     </header>
-
     <main>
       <div>
         <div class="hero">
           <h1 class="hero-heading">Book with TripSwift</h1>
         </div>
         <div class="title">
-           <h3>Flights</h3>
-           <h3>Hotels</h3>
-           <h3>Offers</h3>
-           <h3>Vaccations</h3>
+          <h3>Flights</h3>
+          <h3>Hotels</h3>
+          <h3>Offers</h3>
+          <h3>Destinations</h3>
         </div>
-        <div>
-          <form action="">
-            <label for="From">From</label>
-            <input type="text" placeholder="enter your location">
-            <label for="To">To</label>
-            <input type="text" placeholder="enter your destination">
-            <label for="Depart">Departure Date</label>
-            <input type="date" name="departdate" id="departdate">
-            <label for="return">Return</label>
-            <input type="date" id="returndate">
+        <div class="forms">
+          <form action="#">
+            <label for="from">From</label>
+            <input type="text" id="from" placeholder="enter your location" />
+            <label for="to">To</label>
+            <input type="text" id="to" placeholder="enter your destination" />
+            <label for="departdate">Departure Date</label>
+            <input type="date" name="departdate" id="departdate" />
+            <label for="returndate">Return</label>
+            <input type="date" id="returndate" />
             <label for="Traveler">Traveler</label>
-            <input type="number">
+            <input type="number" id="Traveler" />
             <!-- <label for="submit">Submit</label> -->
-            <input type="submit" value="Search" id="submit">
+            <input type="submit" value="Search" id="submit" />
           </form>
         </div>
         <div class="ads">
-          this is add
-        </div>
-        <div>
-          this is second add
+          <div class="ads-image">
+            <img src="./images/london-min.jpg" alt="london city" />
+            <!-- https://unsplash.com/photos/aerial-photography-of-london-skyline-during-daytime-Oja2ty_9ZLM -->
+          </div>
+          <div class="ads-heading">
+            <h3>Book your london Trip with TripSwift</h3>
+            <p>Book your flights and hotel for affordable prices</p>
+            <button>click to know more</button>
+          </div>
         </div>
         <div class="flex-container">
-          <div class="flex-item1">
-            <h1>This is offer Section</h1>
-            <img src="./images/losangels.jpg" alt="picture of losangels hollywood">
-            <img src="./images/newyork.jpg" alt="picture of newyork city">
-            <img src="./images/sydney.jpg" alt="sydney city">
-            <img src="./images/toronto.jpg" alt="picture of toronto city">
-            <img src="./images/vancouver.jpg" alt="picture of vancouver">
+          <div class="flex item1">
+            <h1>Trip to Famous Destination</h1>
+            <p>
+              Behold the grandeur of Paris, where the Eiffel Tower stands
+              sentinel over a city that breathes art and romance into every
+              cobblestone street. Its Louvre Museum, a treasure trove of
+              masterpieces, beckons art enthusiasts from every corner of the
+              globe. Wander along the Seine River, where history whispers
+              through the majestic Notre Dame Cathedral, an architectural marvel
+              that transcends time. Experience the enchantment of Paris, where
+              every alleyway holds a story, every landmark a piece of living
+              history/p>
+            </p>
+
+            <div class="image-container">
+              <img
+                id="los"
+                src="./images/losangels-min.jpg"
+                alt="picture of losangels hollywood"
+              />
+              <!-- https://www.pexels.com/photo/hollywood-sign-2671089/ -->
+              <img
+                src="./images/newyork-min.jpg"
+                alt="picture of newyork city"
+              />
+              <!-- https://www.pexels.com/photo/skyline-photography-of-buildings-3052361/ -->
+              <img src="./images/sydney-min.jpg" alt="sydney city" />
+              <!-- https://www.pexels.com/photo/hollywood-sign-2671089/ -->
+              <img
+                src="./images/toronto-min.jpg"
+                alt="picture of toronto city"
+              />
+              <!-- https://www.pexels.com/photo/photo-of-toronto-cityscape-at-night-2478248/ -->
+              <img
+                src="./images/vancouver-min.jpg"
+                alt="picture of vancouver"
+              />
+              <!-- https://www.pexels.com/photo/curtain-wall-buildinsg-near-water-at-golden-hour-1471294/ -->
+              <img src="./images/sydney-min.jpg" alt="sydney city" />
+              <!-- https://www.pexels.com/photo/hollywood-sign-2671089/ -->
+            </div>
           </div>
-          <div class="flex-item2">
-            <h1>This is hotel Booking Session</h1>
-            <img src="./images/losangels.jpg" alt="picture of losangels hollywood">
-            <img src="./images/newyork.jpg" alt="picture of newyork city">
-            <img src="./images/sydney.jpg" alt="sydney city">
-            <img src="./images/toronto.jpg" alt="picture of toronto city">
-            <img src="./images/vancouver.jpg" alt="picture of vancouver">
+          <div class="flex item2">
+            <h1>Find the hotel</h1>
+            <p>
+              In New York City, hotels stand as architectural marvels amidst the
+              skyline, offering a blend of luxury and sophistication. From the
+              historic opulence of The Plaza Hotel to the contemporary elegance
+              of The Standard High Line, each accommodation embodies the city's
+              pulsating energy and diverse culture. Sydney's hotels capture the
+              essence of coastal living, with waterfront views and a relaxed yet
+              refined atmosphere. The Park Hyatt Sydney, with its unrivaled
+              views of the Opera House, and the QT Sydney, blending heritage
+              with modernity, provide havens of comfort amid the city's vibrant
+              lifestyle.
+            </p>
+            <div class="image-container">
+              <img
+                src="./images/hotel1-min.jpg"
+                alt="picture of losangels hollywood"
+              />
+              <!-- https://unsplash.com/photos/a-large-building-with-a-street-in-front-of-it-EExBgj85WaU -->
+              <img
+                src="./images/hotel2-min.jpg"
+                alt="picture of newyork city"
+              />
+              <!-- https://unsplash.com/photos/a-large-glass-building-in-the-middle-of-a-city-OeiXNP8IqJE  -->
+              <img src="./images/hotel3-min.jpg" alt="sydney city" />
+              <!-- https://unsplash.com/photos/a-large-glass-building-in-the-middle-of-a-city-OeiXNP8IqJE -->
+              <img
+                src="./images/hotel4-min.jpg"
+                alt="picture of toronto city"
+              />
+              <!-- https://unsplash.com/photos/gold-chandelier-on-white-ceiling-ym_EI-DTS1g -->
+              <img src="./images/hotel5-min.jpg" alt="picture of vancouver" />
+              <!-- https://unsplash.com/photos/a-view-of-a-city-at-night-from-across-the-water-xMh_UNmWKdA -->
+              <img src="./images/hotel6-min.jpg" alt="sydney city" />
+              <!-- https://unsplash.com/photos/laptop-computer-left-turned-on-on-bed-inside-room-during-rainy-night-2aP9DJTk9x8 -->
+            </div>
+          </div>
         </div>
-          </div>
       </div>
-      <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi porro omnis repellendus cumque quisquam dolor libero sequi, vel aperiam amet dolorum alias exercitationem voluptatum labore non saepe hic officiis assumenda.</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magnam dicta repellendus laborum ab. Soluta explicabo nemo velit maxime temporibus, odit animi sapiente accusamus? Repellendus assumenda ex reprehenderit quam cupiditate?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eveniet incidunt est sapiente veniam! Vitae illo, maxime, laborum nostrum voluptas rerum placeat magni iste ab debitis a aspernatur ad doloremque.</p>
-      <div>
-        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex quidem, cumque quod voluptates eveniet ab et maiores vitae. Cupiditate quasi nulla pariatur velit est vel itaque quaerat repellendus rem dicta.</h1>
-      </div>
-  </main>
+    </main>
     <footer>
       <div id="footer-text">
         The cornerstone of TripSwift’s success is our commitment to precision
