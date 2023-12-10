@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TripSwift - Your Tour Partner</title>
     <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/bookings.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,6 +20,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    
   </head>
 
   <body>
@@ -75,37 +77,57 @@
 
     <main>
       <div>
-        <img id="hero" src="" alt="">
-        <h1>Book with TripSwift</h1>
+        <div class="hero">
+          <h1 class="hero-heading">Book with TripSwift</h1>
+        </div>
+        <div>
+          <form action="">
+            <label for="From">From</label>
+            <input type="text" placeholder="enter your location">
+            <label for="To">To</label>
+            <input type="text" placeholder="enter your destination">
+            <label for="Depart">Departure Date</label>
+            <input type="date" name="departdate" id="departdate">
+            <label for="return">Return</label>
+            <input type="date" id="returndate">
+            <label for="Traveler">Traveler</label>
+            <input type="number">
+            <!-- <label for="submit">Submit</label> -->
+            <input type="submit" value="Search">
+          </form>
+        </div>
+        <div class="ads">
+          this is add
+        </div>
+        <div>
+          this is second add
+        </div>
+        <div class="flex-container">
+          <div class="flex-item1">
+            <h1>This is offer Section</h1>
+            <img src="./images/losangels.jpg" alt="picture of losangels hollywood">
+            <img src="./images/newyork.jpg" alt="picture of newyork city">
+            <img src="./images/sydney.jpg" alt="sydney city">
+            <img src="./images/toronto.jpg" alt="picture of toronto city">
+            <img src="./images/vancouver.jpg" alt="picture of vancouver">
+          </div>
+          <div class="flex-item2">
+            <h1>This is hotel Booking Session</h1>
+            <img src="./images/losangels.jpg" alt="picture of losangels hollywood">
+            <img src="./images/newyork.jpg" alt="picture of newyork city">
+            <img src="./images/sydney.jpg" alt="sydney city">
+            <img src="./images/toronto.jpg" alt="picture of toronto city">
+            <img src="./images/vancouver.jpg" alt="picture of vancouver">
+        </div>
+          </div>
       </div>
-      <div class="form">
-        <form action="">
-          <label for="From">From</label>
-          <input type="text" placeholder="enter your location">
-          <label for="To">To</label>
-          <input type="text" placeholder="enter your destination">
-          <label for="Depart">Departure Date</label>
-          <input type="date" name="departdate" id="departdate">
-          <label for="return">Return</label>
-          <input type="date" id="returndate">
-          <label for="Traveler">Traveler</label>
-          <input type="number">
-          <label for="submit">Submit</label>
-          <input type="submit">
-        </form>
-      </div>
-      <div class="ads">
-
-      </div>
+      <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi porro omnis repellendus cumque quisquam dolor libero sequi, vel aperiam amet dolorum alias exercitationem voluptatum labore non saepe hic officiis assumenda.</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magnam dicta repellendus laborum ab. Soluta explicabo nemo velit maxime temporibus, odit animi sapiente accusamus? Repellendus assumenda ex reprehenderit quam cupiditate?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eveniet incidunt est sapiente veniam! Vitae illo, maxime, laborum nostrum voluptas rerum placeat magni iste ab debitis a aspernatur ad doloremque.</p>
       <div>
-        
+        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex quidem, cumque quod voluptates eveniet ab et maiores vitae. Cupiditate quasi nulla pariatur velit est vel itaque quaerat repellendus rem dicta.</h1>
       </div>
-      <div class="flex-container">
-        <div class="flex flex-item1">offer Section and images</div>
-        <div class="flex flex-item2">This is hotel location with image and all</div>
-      </div>
-    </main>
-    </main>
+  </main>
     <footer>
       <div id="footer-text">
         The cornerstone of TripSwift’s success is our commitment to precision
