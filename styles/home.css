@@ -1,0 +1,307 @@
+/* Common */
+.section-heading {
+  margin-left: 40px;
+}
+
+.card-button {
+  width: 100%;
+  border: 1px solid #707070;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hero section */
+#hero {
+  position: relative;
+}
+
+#hero h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #707070;
+  font-size: 30px;
+}
+
+#hero img {
+  height: 400px;
+  width: 100%;
+}
+
+.search-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.search-input {
+  padding: 20px;
+  width: 500px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+}
+
+.search-button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.search-button i {
+  font-size: 25px;
+}
+
+/* Deals section */
+#deals {
+  padding: 20px;
+}
+
+#deals-container {
+  display: flex;
+  padding: 30px;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.deal-description {
+  padding: 20px;
+  background-color: #faf9f6;
+  border-radius: 5px;
+  width: 25%;
+  line-height: 1.5rem;
+}
+
+.deal-description dt {
+  font-weight: bold;
+}
+
+.deal-description button {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 550px;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slider img {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.slider-container button.prev,
+.slider-container button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.slider-container button.prev {
+  left: 0;
+}
+
+.slider-container button.next {
+  right: 0;
+}
+
+/* Offer section */
+#offers {
+  padding: 20px;
+}
+
+#offer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  padding: 30px;
+  min-height: 40vh;
+  background-color: #faf9f6;
+  margin: 20px;
+}
+
+.offer-card {
+  width: 23%;
+  overflow: hidden;
+  position: relative;
+}
+
+.offer-card span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 10rem);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.offer-card:hover span {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.offer-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.offer-card img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.offer-card button {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  text-align: center;
+  background-color: #01bdd1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.offer-card button:hover {
+  background-color: #008e9d;
+}
+
+/* Upcoming bookings section */
+#upcoming-bookings {
+  display: flex;
+  flex-direction: column;
+  min-height: 40vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#upcoming-bookings img {
+  width: 200px;
+}
+
+#bookings-container {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+
+.booking {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  background-color: #faf9f6;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.booking img {
+  border-radius: 5px;
+}
+
+@media (max-width: 1024px) {
+  #deals-container {
+    flex-direction: column;
+  }
+
+  .deal-description {
+    width: unset;
+  }
+
+  .slider-container {
+    max-width: unset;
+  }
+
+  .offer-card {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  #bookings-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .booking {
+    width: 80%;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 759px) {
+  #hero h1 {
+    font-size: 25px;
+  }
+
+  .search-input {
+    padding: 20px;
+    width: 300px;
+    font-size: 14px;
+  }
+
+  #deals-container {
+    flex-direction: column;
+  }
+
+  .deal-description {
+    width: unset;
+  }
+
+  #offer-container {
+    flex-direction: column;
+  }
+
+  .offer-card {
+    width: unset;
+    margin-bottom: 10px;
+  }
+
+  #bookings-container {
+    flex-direction: column;
+  }
+
+  .booking {
+    flex-direction: column-reverse;
+    width: unset;
+  }
+
+  #upcoming-bookings img {
+    width: 100%;
+  }
+}
