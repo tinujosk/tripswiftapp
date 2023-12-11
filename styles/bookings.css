@@ -11,7 +11,7 @@ main {
     position: relative;
     width: 100%;
     height: 350px;
-    background-image: url('../images/indigo.jpg');
+    background-image: url('../images/indigo-min.jpg');
     /* https://unsplash.com/photos/an-airplane-flying-in-the-sky-1NrKEPkSNlg */
     background-size: cover;
     background-position: center;
@@ -59,7 +59,7 @@ main {
     margin-right: 20px;
     background: linear-gradient(to right, #001f3f, #000000);
     color: #ffffff;
-    border-radius: 20px;
+    border-radius: 5px;
 
 }
 
