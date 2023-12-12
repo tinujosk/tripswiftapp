@@ -224,7 +224,7 @@
 
 #bookings-container {
   display: flex;
-  width: 100%;
+  width: 90%;
   padding: 20px;
   justify-content: space-evenly;
 }
