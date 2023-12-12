@@ -1,4 +1,4 @@
-main {
+.main-Section {
   margin: 3% 6%;
   height: auto;
   background: #faf9f5;
@@ -7,7 +7,9 @@ main {
   border: 1px solid grey;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
-
+main{
+  height: auto; 
+}
 #accordion ul {
   margin: 0;
 }
