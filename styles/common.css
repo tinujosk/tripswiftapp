@@ -135,6 +135,12 @@ a {
   word-spacing: 3px;
 }
 
+#footer-text cite {
+  color: #cc201f;
+  font-weight: bold;
+  font-style: normal;
+}
+
 #mobile-menu {
   display: none;
 }

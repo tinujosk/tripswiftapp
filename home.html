@@ -1,245 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TripSwift - Your Tour Partner</title>
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TripSwift - Your Tour Partner</title>
-  <link rel="stylesheet" href="./styles/common.css" />
-  <link rel="stylesheet" href="./styles/home.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-  <header>
-    <a href="./home.html"><img src="./images/logo.png" alt="The company logo" /></a>
-    <nav>
-      <ul>
-        <li>
-          <i class="fa-solid fa-suitcase"></i><a href="./home.html">Home</a>
-        </li>
-        <li>
-          <i class="fa-solid fa-earth-americas"></i>
-          <a href="./attractions.html">Attractions</a>
-        </li>
-        <li>
-          <i class="fa-solid fa-plane"></i><a href="./bookings.html">Flights and Hotels</a>
-        </li>
-        <li>
-          <i class="fa-solid fa-address-book"></i><a href="./contact.html">Contact Us</a>
-        </li>
-      </ul>
-    </nav>
-    <div id="user-profile">
-      <ul>
-        <li><i class="fa-solid fa-envelope"></i></li>
-        <li><i class="fa-solid fa-language"></i></li>
-        <li>
-          <a href="./index.html">
-            <i title="Click to Logout" class="fa-solid fa-user"></i></a>
-        </li>
-      </ul>
-    </div>
-    <div id="mobile-menu">
-      <input type="checkbox" id="slider-checkbox" hidden>
-      <label for="slider-checkbox" class="slider-button"><i for="slider-checkbox" class="fa-solid fa-bars"></i></label>
-      <div class="slider-menu">
-        <ul>
-          <li><a href="./home.html">Home</a></li>
-          <li> <a href="./attractions.html">Attractions</a></li>
-          <li><a href="./bookings.html">Flights and Hotels</a></li>
-          <li><a href="./contact.html">Contact Us</a></li>
-          <li><a href="./index.html">Logout</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section id="hero">
-      <h1>Discover Your Next Adventure...</h1>
-      <img src="./images/home-cover-min.jpg" alt="" />
-      <div class="search-container">
-        <input type="text" class="search-input" placeholder="Search places, packages, hotels, flights.." />
-        <button type="submit" class="search-button">
-          <i class="fas fa-search"></i>
-        </button>
-      </div>
-    </section>
-    <section id="deals">
-      <h2 class="section-heading">Best Deals of the season</h2>
-      <div id="deals-container">
-        <div class="slider-container">
-          <div class="slider">
-            <img src="./images/deal1.jpg" alt="Slide 1" />
-          </div>
-          <button class="prev">❮</button>
-          <button class="next">❯</button>
-        </div>
-        <div class="deal-description">
-          <h3>Manali, Himachal Pradhesh</h3>
-          <p>
-            Nestled in the picturesque Indian state of Himachal Pradesh, Manali is a serene haven that captivates
-            travelers with its breathtaking landscapes and vibrant culture. The town, situated at an altitude of 6,726
-            feet, offers an enchanting blend of snow-capped mountains, lush valleys, and gushing rivers, making it a
-            year-round destination.
-
-            Manali boasts a plethora of attractions that cater to various interests. Rohtang Pass, a high mountain pass,
-            offers panoramic views of the surrounding peaks and is a gateway to Lahaul-Spiti Valley. Solang Valley is a
-            hub for adventure enthusiasts, offering activities like paragliding, zorbing, and skiing during winters. The
-            Beas River snakes through the valley, providing opportunities for river rafting and serene riverside
-            strolls.</p>
-        </div>
-        <div class="deal-description">
-          <h3>Special Offers</h3>
-          <dl>
-            <dt>Early Bird Booking Offer:</dt>
-            <dd>Book 60 days in advance and get a 15% discount on the entire package.</dd>
-          </dl>
-          <dl>
-            <dt>Family Package Deal:</dt>
-            <dd>Special discounts for families with children.</dd>
-            <dd>Complimentary meals for kids under 12.</dd>
-          </dl>
-          <dl>
-            <dt>Honeymoon Special:</dt>
-            <dd>Romantic candlelight dinner for couples.</dd>
-            <dd>Special room decorations and complimentary surprises.</dd>
-          </dl>
-          <button class="card-button ">View itinerary</button>
-        </div>
-      </div>
-    </section>
-    <section id="offers">
-      <h2 class="section-heading">Other Offers</h2>
-      <div id="offer-container">
-        <div class="offer-card">
-          <img src="./images/offer1-min.jpg" alt="Offer 1 image">
-          <span>Mountains</span>
-          <button>View Offer</button>
-        </div>
-        <div class="offer-card">
-          <img src="./images/offer2-min.jpg" alt="Offer 2 image">
-          <span>Boating</span>
-          <button>View Offer</button>
-        </div>
-        <div class="offer-card">
-          <img src="./images/offer3-min.jpg" alt="Offer 3 image">
-          <span>Balloons</span>
-          <button>View Offer</button>
-        </div>
-        <div class="offer-card">
-          <img src="./images/offer4-min.jpg" alt="Offer 4 image">
-          <span>Water falls</span>
-          <button>View Offer</button>
-        </div>
-      </div>
-    </section>
-    <section id="upcoming-bookings">
-      <h2>Your Upcoming Bookings</h2>
-      <div id="bookings-container">
-        <div class="booking">
-          <div>
-            <h3>Elixir Resorts - Munnar</h3>
-            <p>Destination: Elixir Resort, Munnar</p>
-            <p>February 10th 2024</p>
-            <p>Status: Booked</p>
-            <button class="card-button">View Details</button>
-          </div>
-          <div>
-            <img src="./images/resort-min.jpg" alt="">
-          </div>
-        </div>
-        <div class="booking">
-          <div>
-            <h3>Trip to the falls</h3>
-            <p>Destination: Niagra, Canada</p>
-            <p>March 20th 2024</p>
-            <p>Status: Booked</p>
-            <button class="card-button">View Details</button>
-          </div>
-          <div>
-            <img src="./images/offer4-min.jpg" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
-    </div>
-  </main>
-  <footer>
-    <div id="footer-text">
-      The cornerstone of TripSwift’s success is our commitment to precision
-      and personalization. Our platform harnesses the latest advancements in
-      AI and machine learning to understand and anticipate traveler
-      preferences, ensuring each itinerary is a masterpiece tailored to
-      perfection. We blend this technological finesse with a team of
-      passionate travel connoisseurs, each armed with a wealth of expertise
-      and a fervor for exploration. TripSwift isn’t just a travel agency; it's
-      a catalyst for unforgettable memories. We prioritize sustainability,
-      partnering with eco-conscious accommodations and promoting responsible
-      travel practices. Our vision extends beyond booking flights and
-      accommodations; it's about crafting transformative experiences that
-      leave an indelible mark on each adventurer’s soul. In a world inundated
-      with options, TripSwift stands tall as the epitome of personalized,
-      immersive travel, promising not just vacations, but unforgettable
-      odysseys.
-    </div>
-    <div id="footer-content">
-      <div>
-        <h4>Quick links</h4>
-        <ul>
-          <li><a href="./home.html">Home</a></li>
-          <li><a href="./attractions.html">Attractions</a></li>
-          <li><a href="./bookings.html">Flights and Hotels</a></li>
-          <li><a href="./contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Reach the developers</h4>
-        <ul>
-          <li><a href="">Kiran</a></li>
-          <li><a href="">Alister</a></li>
-          <li><a href="">Viswanathan</a></li>
-          <li><a href="">Tinu</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Other links</h4>
-        <ul>
-          <li><a href="">Travel Policies</a></li>
-          <li><a href="">Testimonials or Reviews</a></li>
-          <li><a href="">Partnerships</a></li>
-          <li><a href="">Newsletter</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Get connected with us!</h4>
+  <body>
+    <header>
+      <a href="./home.html"
+        ><img src="./images/logo.png" alt="The company logo"
+      /></a>
+      <nav>
         <ul>
           <li>
-            <i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <i class="fa-solid fa-suitcase"></i><a href="./home.html">Home</a>
           </li>
           <li>
-            <i class="fa-brands fa-youtube"></i><a href="https://www.youtube.com/" target="_blank">YouTube</a>
+            <i class="fa-solid fa-earth-americas"></i>
+            <a href="./attractions.html">Attractions</a>
           </li>
           <li>
-            <i class="fa-brands fa-twitter"></i><a href="https://www.twitter.com/" target="_blank">Twitter</a>
+            <i class="fa-solid fa-plane"></i
+            ><a href="./bookings.html">Flights and Hotels</a>
           </li>
           <li>
-            <i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <i class="fa-solid fa-address-book"></i
+            ><a href="./contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="user-profile">
+        <ul>
+          <li><i class="fa-solid fa-envelope"></i></li>
+          <li><i class="fa-solid fa-language"></i></li>
+          <li>
+            <a href="./index.html">
+              <i title="Click to Logout" class="fa-solid fa-user"></i
+            ></a>
           </li>
         </ul>
       </div>
-    </div>
-    <div class="line"></div>
-    <div id="footer-copyright">
-      &copy; 2023 Copyright TripSwift App. All rights reserved.
-    </div>
-  </footer>
-</body>
-
+      <div id="mobile-menu">
+        <input type="checkbox" id="slider-checkbox" hidden />
+        <label for="slider-checkbox" class="slider-button"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
+        <div class="slider-menu">
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./attractions.html">Attractions</a></li>
+            <li><a href="./bookings.html">Flights and Hotels</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <li><a href="./index.html">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="hero">
+        <h1>Discover Your Next Adventure...</h1>
+        <img src="./images/home-cover-min.jpg" alt="" />
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search places, packages, hotels, flights.."
+          />
+          <button type="submit" class="search-button">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </section>
+      <section id="deals">
+        <h2 class="section-heading">Best Deals of the season</h2>
+        <div id="deals-container">
+          <div class="slider-container">
+            <div class="slider">
+              <img src="./images/deal1.jpg" alt="Slide 1" />
+            </div>
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+          </div>
+          <div class="deal-description">
+            <h3>Manali, Himachal Pradhesh</h3>
+            <p>
+              Nestled in the picturesque Indian state of Himachal Pradesh,
+              Manali is a serene haven that captivates travelers with its
+              breathtaking landscapes and vibrant culture. The town, situated at
+              an altitude of 6,726 feet, offers an enchanting blend of
+              snow-capped mountains, lush valleys, and gushing rivers, making it
+              a year-round destination. Manali boasts a plethora of attractions
+              that cater to various interests. Rohtang Pass, a high mountain
+              pass, offers panoramic views of the surrounding peaks and is a
+              gateway to Lahaul-Spiti Valley. Solang Valley is a hub for
+              adventure enthusiasts, offering activities like paragliding,
+              zorbing, and skiing during winters. The Beas River snakes through
+              the valley, providing opportunities for river rafting and serene
+              riverside strolls.
+            </p>
+          </div>
+          <div class="deal-description">
+            <h3>Special Offers</h3>
+            <dl>
+              <dt>Early Bird Booking Offer:</dt>
+              <dd>
+                Book 60 days in advance and get a 15% discount on the entire
+                package.
+              </dd>
+            </dl>
+            <dl>
+              <dt>Family Package Deal:</dt>
+              <dd>Special discounts for families with children.</dd>
+              <dd>Complimentary meals for kids under 12.</dd>
+            </dl>
+            <dl>
+              <dt>Honeymoon Special:</dt>
+              <dd>Romantic candlelight dinner for couples.</dd>
+              <dd>Special room decorations and complimentary surprises.</dd>
+            </dl>
+            <button class="card-button">View itinerary</button>
+          </div>
+        </div>
+      </section>
+      <section id="offers">
+        <h2 class="section-heading">Other Offers</h2>
+        <div id="offer-container">
+          <div class="offer-card">
+            <img src="./images/offer1-min.jpg" alt="Offer 1 image" />
+            <span>Mountains</span>
+            <button>View Offer</button>
+          </div>
+          <div class="offer-card">
+            <img src="./images/offer2-min.jpg" alt="Offer 2 image" />
+            <span>Boating</span>
+            <button>View Offer</button>
+          </div>
+          <div class="offer-card">
+            <img src="./images/offer3-min.jpg" alt="Offer 3 image" />
+            <span>Balloons</span>
+            <button>View Offer</button>
+          </div>
+          <div class="offer-card">
+            <img src="./images/offer4-min.jpg" alt="Offer 4 image" />
+            <span>Water falls</span>
+            <button>View Offer</button>
+          </div>
+        </div>
+      </section>
+      <section id="upcoming-bookings">
+        <h2>Your Upcoming Bookings</h2>
+        <div id="bookings-container">
+          <div class="booking">
+            <div>
+              <h3>Elixir Resorts - Munnar</h3>
+              <p>Destination: Elixir Resort, Munnar</p>
+              <p>February 10th 2024</p>
+              <p>Status: Booked</p>
+              <button class="card-button">View Details</button>
+            </div>
+            <div>
+              <img src="./images/resort-min.jpg" alt="" />
+            </div>
+          </div>
+          <div class="booking">
+            <div>
+              <h3>Trip to the falls</h3>
+              <p>Destination: Niagra, Canada</p>
+              <p>March 20th 2024</p>
+              <p>Status: Booked</p>
+              <button class="card-button">View Details</button>
+            </div>
+            <div>
+              <img src="./images/offer4-min.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="footer-text">
+        The cornerstone of TripSwift’s success is our commitment to precision
+        and personalization. Our platform harnesses the latest advancements in
+        AI and machine learning to understand and anticipate traveler
+        preferences, ensuring each itinerary is a masterpiece tailored to
+        perfection. We blend this technological finesse with a team of
+        passionate travel connoisseurs, each armed with a wealth of expertise
+        and a fervor for exploration. TripSwift isn’t just a travel agency; it's
+        a catalyst for unforgettable memories. We prioritize sustainability,
+        partnering with eco-conscious accommodations and promoting responsible
+        travel practices. Our vision extends beyond booking flights and
+        accommodations; it's about crafting transformative experiences that
+        leave an indelible mark on each adventurer’s soul. In a world inundated
+        with options, TripSwift stands tall as the epitome of personalized,
+        immersive travel, promising not just vacations, but unforgettable
+        odysseys. <cite>Images are downloaded from unsplash.com</cite>
+      </div>
+      <div id="footer-content">
+        <div>
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./attractions.html">Attractions</a></li>
+            <li><a href="./bookings.html">Flights and Hotels</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Reach the developers</h4>
+          <ul>
+            <li><a href="">Kiran</a></li>
+            <li><a href="">Alister</a></li>
+            <li><a href="">Viswanathan</a></li>
+            <li><a href="">Tinu</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Other links</h4>
+          <ul>
+            <li><a href="">Travel Policies</a></li>
+            <li><a href="">Testimonials or Reviews</a></li>
+            <li><a href="">Partnerships</a></li>
+            <li><a href="">Newsletter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get connected with us!</h4>
+          <ul>
+            <li>
+              <i class="fa-brands fa-facebook"></i
+              ><a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            </li>
+            <li>
+              <i class="fa-brands fa-youtube"></i
+              ><a href="https://www.youtube.com/" target="_blank">YouTube</a>
+            </li>
+            <li>
+              <i class="fa-brands fa-twitter"></i
+              ><a href="https://www.twitter.com/" target="_blank">Twitter</a>
+            </li>
+            <li>
+              <i class="fa-brands fa-instagram"></i
+              ><a href="https://www.instagram.com/" target="_blank"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div id="footer-copyright">
+        &copy; 2023 Copyright TripSwift App. All rights reserved.
+      </div>
+    </footer>
+  </body>
 </html>
