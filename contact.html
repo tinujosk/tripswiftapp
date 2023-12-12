@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TripSwift - Your Tour Partner</title>
     <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/contacts.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,7 +21,6 @@
       referrerpolicy="no-referrer"
     />
   </head>
-
   <body>
     <header>
       <a href="./home.html"
@@ -73,21 +73,113 @@
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <ul id="accordion">
+        <div class="headingFAQ">
+          <h3>Frequently Asked Questions</h3>
+          <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+          </div>
+        </div>
+        
+        <li>
+          <label for="first">How do I book a trip?<span>&#x3e</span></label>
+          <input type="radio" name="accordion" id="first" checked>
+          <div class="content">
+            <p>
+              You can book a trip directly through our website by selecting your desired destination, dates, and preferred accommodations. Follow the prompts to complete the booking process.
+            </p>
+          </div>
+        </li>
+        <li>
+          <label for="second">What types of accommodations do you offer?<span>&#x3e</span></label>
+          <input type="radio" name="accordion" id="second" >
+          <div class="content">
+            <p>
+              We offer a range of accommodations, including hotels, resorts, vacation rentals, and boutique stays. You can filter your search based on your preferences.            </p>
+          </div>
+        </li>
+        <li>
+          <label for="third">Are flights included in the trip packages?<span>&#x3e</span></label>
+          <input type="radio" name="accordion" id="third" >
+          <div class="content">
+            <p>
+              In most cases, flights are not included in our trip packages. However, we can assist with recommendations and tips for booking flights to your destination.            </p>
+          </div>
+        </li>
+        <li>
+          <label for="fourth">Can I customize my trip itinerary?<span>&#x3e</span></label>
+          <input type="radio" name="accordion" id="fourth" >
+          <div class="content">
+            <p>
+              Yes, we offer customizable itineraries. Contact our team with your specific preferences, and we'll work with you to create a personalized trip plan.            </p>
+          </div>
+        </li>
+        <li>
+          <label for="fifth">What is your cancellation policy?<span>&#x3e</span></label>
+          <input type="radio" name="accordion" id="fifth" >
+          <div class="content">
+            <p>
+              Our cancellation policy varies depending on the type of booking and the provider. Please refer to the terms and conditions or contact our customer support for detailed information.            </p>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <div class="grid-container">
+      <div class="section section1">
+        <h3>Contact Us Form</h3>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+          <option value="" disabled selected>Select your country</option>
+          <option value="USA">United States</option>
+          <option value="Canada">Canada</option>
+  </select>
+    
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+    <div class="buttonSection">
+          <button id="submitButton">Submit</button>
+        </div>
+        </form>
+      </div>
+      <div class="section section2">
+        <h3>Our Branches</h3>
+        <img src="./images/storemap.jpg" alt="storemap" width="100%" height="91%" id="storemap">
+      </div>
+    </div>
+    <div class="subscribe">
+      <h3 class="mainHeading">Save Time, Save Money!</h3>
+      <h5 class="subHeading">Sign up and we'll send the best deals to You!!!</h5>
+      <div class="search-container1">
+        <input type="text" id="searchInput1" placeholder="Email..">
+        <div class="buttonSection">
+        <button id="subscribeButton">Subscribe</button></div>
+      </div>
+      
+    </div>
     <footer>
       <div id="footer-text">
-        The cornerstone of TripSwift’s success is our commitment to precision
+        The cornerstone of TripSwift's success is our commitment to precision
         and personalization. Our platform harnesses the latest advancements in
         AI and machine learning to understand and anticipate traveler
         preferences, ensuring each itinerary is a masterpiece tailored to
         perfection. We blend this technological finesse with a team of
         passionate travel connoisseurs, each armed with a wealth of expertise
-        and a fervor for exploration. TripSwift isn’t just a travel agency; it's
+        and a fervor for exploration. TripSwift isn't just a travel agency; it's
         a catalyst for unforgettable memories. We prioritize sustainability,
         partnering with eco-conscious accommodations and promoting responsible
         travel practices. Our vision extends beyond booking flights and
         accommodations; it's about crafting transformative experiences that
-        leave an indelible mark on each adventurer’s soul. In a world inundated
+        leave an indelible mark on each adventurer's soul. In a world inundated
         with options, TripSwift stands tall as the epitome of personalized,
         immersive travel, promising not just vacations, but unforgettable
         odysseys.
