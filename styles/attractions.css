@@ -1,26 +1,25 @@
 .view {
-    position: relative;
-    text-align: center;
-  }
+  position: relative;
+  text-align: center;
+}
 
-  .view img {
-    max-width: 100%;
-    height: auto;
-  }
+.view img {
+  max-width: 100%;
+  height: auto;
+}
 
-  .view h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 200px;
-  }
+.view h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 160px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
-
-main
-{
-    margin: 40px;
+main {
+  margin: 40px;
 }
 
 .search-container {
@@ -35,107 +34,109 @@ main
 
 .search-box input {
   padding: 15px;
-  border: 10px;
+  border: 1px solid #707070;
+  width: 300px;
   border-radius: 5px;
   margin: 15px;
 }
 
 .search-box button {
-  padding: 8px 12px;
+  padding: 15px;
   border: none;
   border-radius: 5px;
-  background:linear-gradient(to right, #001f3f, #000000);
+  background: linear-gradient(to right, #001f3f, #000000);
   color: white;
   cursor: pointer;
 }
-.grid{
-    margin: 100px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
-    height: 100vh;
-    max-width: 100%;
-    grid-gap: 20px;
+
+.grid {
+  margin: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  height: 100vh;
+  max-width: 100%;
+  grid-gap: 20px;
 }
 
 .grid-item {
   position: relative;
-    border: 1px solid #ccc;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.grid-item .text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.grid-item img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.grid-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-gap: 15px;
+    margin: auto;
+    height: auto;
+  }
+
+  .view h1 {
+    font-size: 140px;
+  }
+
+  .search-box input {
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+
+  .search-box button {
+    padding: 12px 18px;
+  }
+}
+
+@media (max-width: 759px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin: 10px;
+    grid-gap: 10px;
+  }
+
+  .view h1 {
+    font-size: 50px;
+  }
+
+  .search-box input {
     padding: 10px;
-    text-align: center;
-    aspect-ratio: 1 / 1;
-    overflow: hidden;
+    margin-bottom: 10px;
+    width: 250px;
   }
 
-  .grid-item .text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    z-index: 2;
+  .search-box button {
+    padding: 10px 15px;
   }
-
-  .grid-item img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-  }
-
-
-  .grid-item a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    color: inherit;
-  }
-
-
-  @media (max-width: 1024px) {
-    .grid {
-      grid-gap: 15px;
-      margin: auto;
-      height: auto;
-    }
-
-    .view h1 {
-      font-size: 140px;
-    }
-
-    .search-box input {
-      padding: 12px;
-      margin-bottom: 12px;
-    }
-
-    .search-box button {
-      padding: 12px 18px;
-    }
-  }
-
-  @media (max-width: 759px) {
-    .grid {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(4, 1fr); 
-      margin: 10px; 
-      grid-gap: 10px;
-    }
-
-    .view h1 {
-      font-size: 50px;
-    }
-
-    .search-box input {
-      padding: 10px;
-      margin-bottom: 10px;
-    }
-
-    .search-box button {
-      padding: 10px 15px;
-    }
-  }
+}
