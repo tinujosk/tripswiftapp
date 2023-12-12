@@ -78,7 +78,7 @@ main {
   border-radius: 5px;
   background: #faf9f5;
   box-shadow: 4px 4px 8px rgba(10, 0, 0, 0.3);
-  max-height: 80%;
+  height: 83%;
 }
 
 label {
@@ -177,7 +177,7 @@ select#country option[disabled]:first-child {
 
 img {
   width: 100%;
-  max-height: 80%;
+  height: 90%;
 }
 
 .subscribe {
