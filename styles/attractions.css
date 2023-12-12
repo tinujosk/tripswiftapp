@@ -22,6 +22,10 @@ main {
   margin: 40px;
 }
 
+main h2 {
+  margin-left: 20px;
+}
+
 .search-container {
   position: absolute;
   bottom: 10px;

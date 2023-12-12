@@ -78,8 +78,8 @@
   border-radius: 5px;
   width: 25%;
   line-height: 1.5rem;
-  /* max-height: 400px; */
   overflow: hidden;
+  box-shadow: 5px 5px 3px -4px rgba(0, 0, 0, 0.48);
 }
 
 .deal-description dt {
@@ -235,6 +235,7 @@
   background-color: #faf9f6;
   padding: 20px;
   border-radius: 5px;
+  box-shadow: 5px 5px 3px -4px rgba(0, 0, 0, 0.48);
 }
 
 .booking img {
