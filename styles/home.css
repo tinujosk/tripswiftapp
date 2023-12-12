@@ -78,10 +78,16 @@
   border-radius: 5px;
   width: 25%;
   line-height: 1.5rem;
+  /* max-height: 400px; */
+  overflow: hidden;
 }
 
 .deal-description dt {
   font-weight: bold;
+}
+
+.deal-description dd {
+  width: 80%;
 }
 
 .deal-description button {
@@ -160,6 +166,7 @@
   transform: translate(-50%, 10rem);
   opacity: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .offer-card:hover span {
