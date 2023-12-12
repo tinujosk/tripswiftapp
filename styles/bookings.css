@@ -208,6 +208,11 @@ main {
     gap: 40px;
     margin: 20px;
   }
+
+  .ads img {
+    width: 375px;
+  }
+
   .ads-heading {
     text-align: center;
   }
