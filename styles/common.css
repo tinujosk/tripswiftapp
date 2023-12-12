@@ -170,6 +170,10 @@ a {
   font-weight: bold;
 }
 
+#slider-checkbox {
+  display: none;
+}
+
 #slider-checkbox:checked + .slider-button + .slider-menu {
   left: 0;
 }
