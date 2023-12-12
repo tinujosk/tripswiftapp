@@ -1,18 +1,20 @@
-.main-Section {
-  margin: 3% 6%;
+.main-section {
+  margin: 55px;
   height: auto;
   background: #faf9f5;
   padding: 16px;
-  border-radius: 10px;
-  border: 1px solid grey;
+  border-radius: 5px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
-main{
-  height: auto; 
+
+main {
+  height: auto;
 }
+
 #accordion ul {
   margin: 0;
 }
+
 #accordion li {
   list-style: none;
   margin-bottom: 10px;
@@ -31,14 +33,17 @@ main{
   font-weight: 500;
   color: #037683;
 }
+
 #accordion li label span {
   transform: rotate(90deg);
   font-size: 16px;
   color: #333;
 }
+
 #accordion label + input[type="radio"] {
   display: none;
 }
+
 #accordion .content {
   padding: 0 10px;
   line-height: 26px;
@@ -46,6 +51,7 @@ main{
   overflow: hidden;
   transition: max-height 0.1s;
 }
+
 #accordion label + input[type="radio"]:checked + .content {
   max-height: 400px;
 }
@@ -54,14 +60,12 @@ main{
   font-weight: 500;
   font-size: 16px;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  padding: 20px;
-  background-color: #f5f5f5;
-  border: 1px solid grey;
-  border-radius: 5px;
+  padding: 40px;
   margin: 15px;
 }
 
@@ -71,7 +75,7 @@ main{
   gap: 10px;
   border: 1px solid grey;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   background: #faf9f5;
   box-shadow: 4px 4px 8px rgba(10, 0, 0, 0.3);
   min-height: 60vh;
@@ -92,6 +96,7 @@ textarea {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
 input[type="submit"] {
   padding: 8px 20px;
   background-color: #007bff;
@@ -103,6 +108,7 @@ input[type="submit"] {
   margin-left: 35%;
   box-shadow: 4px 4px 8px rgba(2, 2, 2, 0.3);
 }
+
 input[type="subscribe"] {
   padding: 9px 9px;
   background-color: #007bff;
@@ -112,6 +118,7 @@ input[type="subscribe"] {
   cursor: pointer;
   width: 3%;
 }
+
 select#country {
   width: 100%;
   padding: 8px;
@@ -127,12 +134,14 @@ select#country option {
 select#country option[disabled]:first-child {
   color: #aaa;
 }
-.headingFAQ {
+
+.heading-faq {
   display: grid;
   grid-template-columns: 1fr 3fr;
   align-items: center;
   margin: 10px;
 }
+
 #faq {
   text-align: center;
   margin: 0;
@@ -143,14 +152,16 @@ select#country option[disabled]:first-child {
   width: 50%;
   background: #fff;
 }
-#searchInput {
+
+#search-input {
   width: 45%;
   padding: 8px;
   height: 40px;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid #ccc;
 }
-#searchInput1 {
+
+#search-input1 {
   width: 28%;
   padding: 8px;
   height: 40px;
@@ -171,62 +182,68 @@ img {
 
 .subscribe {
   height: 70%;
-  padding:10px;
-  border: 1px solid black;
-  margin: 15px;
+  padding: 30px;
+  margin: 55px;
   box-shadow: 2px 2px 2px rgba(2, 2, 2, 0.3);
   background: #faf9f5;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 #storemap {
   border: 1px solid grey;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 4px 4px 8px rgba(2, 2, 2, 0.3);
   overflow: hidden;
 }
-#subscribeHeading {
+
+#subscribe-heading {
   text-align: center;
   font-size: 30px;
   font-weight: 100;
   color: red;
 }
 
-.mainHeading {
+.main-heading {
   text-align: center;
   margin: 10px;
   color: #007b89;
 }
-.subHeading {
+
+.sub-heading {
   text-align: center;
 }
+
 .search-container1 {
   text-align: center;
   margin: 10px;
 }
-#subscribeButton {
+
+#subscribe-button {
+  margin-top: 20px;
   padding: 10px;
-  background: #007bff;
+  background: #008e9d;
+  width: 28%;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   color: #fff;
-  margin: 5px;
-  box-shadow: 4px 4px 8px rgba(2, 2, 2, 0.3);
-  width: auto;
 }
-#submitButton {
+
+#submit-button {
+  margin-top: 20px;
+  width: 100%;
   padding: 12px;
-  background: #007bff;
+  background: #008e9d;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   color: #fff;
-  box-shadow: 4px 4px 8px rgba(2, 2, 2, 0.3);
 }
-.buttonSection {
+
+.button-section {
   text-align: center;
 }
+
 @media (max-width: 1024px) {
   .grid-container {
     grid-template-columns: 1fr;
@@ -236,11 +253,11 @@ img {
     width: 100%;
     height: 86%;
   }
-  #searchInput{
+  #search-input {
     width: 100%;
   }
-  #searchInput1{
-    width: 100%;
+  #search-input1 {
+    width: 70%;
   }
   .subscribe {
     border: none;
@@ -248,25 +265,28 @@ img {
 }
 
 @media (max-width: 760px) {
+  .main-section {
+    margin: 0;
+  }
+
   .grid-container {
     grid-template-columns: 1fr;
     padding: 10px;
-    background-color: #f5f5f5;
     border: 2px solid grey;
     border-radius: 10px;
-    margin: 15px;
-    border: none
+    margin: 0;
+    border: none;
   }
-  .headingFAQ {
+  .heading-faq {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     margin: 10px;
   }
-  #searchInput{
+  #search-input {
     width: 100%;
   }
-  #searchInput1{
+  #search-input1 {
     width: 100%;
   }
   #faq {
@@ -279,5 +299,6 @@ img {
   }
   .subscribe {
     border: none;
+    margin: 0;
   }
 }
